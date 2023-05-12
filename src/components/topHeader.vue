@@ -5,7 +5,7 @@
 
 </script>
 <template>
-    <div class="d-flex w-100 justify-content-between">      
+    <div class="d-flex w-100 justify-content-between align-items-center">      
         <span style="text-transform: capitalize;">
             <i class="fa-regular fa-clock"></i>
             open hours: mon - sat 9:00-18:00
@@ -21,9 +21,7 @@
             </span>
             <i class="fa-brands fa-facebook-f me-4"></i>
             <i class="fa-brands fa-twitter me-4"></i>
-            <i class="fa-brands fa-linkedin-in me-4"></i>
-            
-
+            <i class="fa-brands fa-linkedin-in me-4"></i>     
         </div>
     </div>
 </template>
@@ -31,6 +29,9 @@
     *{
         color: white;
         font-size: 0.9rem;
+        span {
+            font-weight: 100;
+        }
 
     }
 

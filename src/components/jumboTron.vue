@@ -4,31 +4,36 @@
     }
 </script>
 <template>
-    <div class="m-auto py-4" style="width: 60%">
-        <nav class="d-flex w-100 justify-content-between">
-            <div>
-                <span class="startlogo">
-                    <b>
-                        nex
-                    </b>
-                </span>
-                <span style="margin-left: -10px;">
-                    <b>
-                        gen
-                    </b>
-                </span>
-            </div>
-            <div>
-
-            </div>
-
-        </nav>
-        
-    </div>
+    <section>
+        <div class="m-auto py-4" style="width: 60%">
+            <nav class="d-flex w-100 justify-content-between">
+                <div>
+                    <span class="startlogo">
+                        <b>
+                            nex
+                        </b>
+                    </span>
+                    <span style="margin-left: -10px;">
+                        <b>
+                            gen
+                        </b>
+                    </span>
+                </div>
+                <div>
+                </div>
+            </nav>
+        </div>
+    </section>
 </template>
 
 <style lang="scss" scoped>
     @import "../style/partials/_variables";
+
+    section{
+        height: 90vh;
+        width:100%;
+        background-color: rgba(32, 32, 32, 0.512);
+    }
     span {
         color: white;
         text-transform: uppercase;
