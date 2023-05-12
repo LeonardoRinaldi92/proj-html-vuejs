@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <h1>Ciao mondo</h1>
+  <h1>dai dai dai</h1>
 </template>
 
 <style lang="scss">
