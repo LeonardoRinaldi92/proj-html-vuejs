@@ -16,7 +16,7 @@
                 +1 (305) 1234-5678
             </span>
             <span class="me-4">
-                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-solid fa-envelope"></i>
                 hello@example.com
             </span>
             <i class="fa-brands fa-facebook-f me-4"></i>

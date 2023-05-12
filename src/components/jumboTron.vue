@@ -33,6 +33,7 @@
         height: 90vh;
         width:100%;
         background-color: rgba(32, 32, 32, 0.512);
+        background-repeat: no-repeat
     }
     span {
         color: white;

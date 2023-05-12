@@ -35,6 +35,8 @@
   .jumbo {
     height: 90vh;
     background-image: url(images/bg-9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 </style>
