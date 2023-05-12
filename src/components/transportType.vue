@@ -7,7 +7,7 @@ export default {
 <template>
     <div class="box100 d-flex align-items-center justify-content-center" id="about">
         <div style="width: 60%; height: 70%;" class="d-flex">
-            <div class="col-8">
+            <div class="col-9">
                 <span style="text-transform: uppercase;">
                     <b>
                         who we are
@@ -52,11 +52,76 @@ export default {
                 </ul>
             </div>
             
-            <div class="col-4">
-                <p>
-                    
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, dolores! Eligendi, sunt quibusdam exercitationem fugiat earum aspernatur cumque illum vitae praesentium pariatur, dolor deleniti beatae quia impedit, architecto cum labore.
-                </p>
+            <div class="col-3">
+                <span>
+                    <b>
+                        Vehicle Types
+                    </b>
+                </span>
+                <div class="w-100 d-flex flex-column sx-camioncini my-5">
+                    <div class="col-4 d-flex align-items-center justify-content-between">
+                        <div style="background-color: rgba(0, 255, 255, 0.06);" class="p-2">
+                            <img src="/images/truck-1.png" alt="">
+                        </div>
+                        <div>
+                            <span>
+                                <b>
+                                    Light
+                                </b>
+                            </span>
+                            <p>
+                                Max Weight 1200kg.
+                            </p>
+                        </div>        
+                    </div>
+                    <hr>
+                    <div class="col-4 d-flex align-items-center justify-content-between">
+                        <div style="background-color: rgba(0, 255, 255, 0.06);" class="p-2">
+                            <img src="/images/truck-1.png" alt="">
+                        </div> 
+                        <div>
+                            <span>
+                                <b>
+                                    Medium
+                                </b>
+                            </span>
+                            <p>
+                                Max Weight 6000kg.
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-4 d-flex align-items-center justify-content-between">
+                        <div style="background-color: rgba(0, 255, 255, 0.06);" class="p-2">
+                            <img src="/images/truck-1.png" alt="">
+                        </div>
+                        <div>
+                            <span>
+                                <b>
+                                    Heavy
+                                </b>
+                            </span>
+                            <p>
+                                Max Weight 24000kg.
+                            </p>
+                        </div> 
+                    </div>
+                    <hr>
+                </div>
+                <div class="premi">
+                    <span>
+                    <b>
+                        Certifications
+                    </b>
+                    <div class="d-flex my-3"> 
+                        <img src="/images/certificate.png" alt="" style="height: 130px;">
+                        <img src="/images/certificate.png" alt="" style="height: 130px;">
+
+                    </div>
+                </span>
+
+
+                </div>
             </div>
 
         </div>
@@ -70,7 +135,7 @@ export default {
         height: 100vh;
         width: 100%;
     }
-    .col-8 {
+    .col-9 {
         padding-right: 100px;
         span {
             color: $blue
@@ -101,6 +166,19 @@ export default {
             border-left: 5px solid $sky;
         }
 
+    }
+    .col-3 {
+        span {
+            font-size: 1.4rem;
+        }
+        .col-4 {
+            width: 100%;           
+        }
+        .sx-camioncini {
+            img {
+                height: 50px;
+            }
+        }
     }
 
 </style>
