@@ -1,1 +1,31 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
+@import "../style/partials/_variables";
+
+.button {
+    background-color: $skyButton;
+    padding: 12.5px 25px;
+}
+
+.button,
+.reverseButton {  
+    border-radius: 5px;
+}
+
+.reverseButton {
+    border: 2px solid $skyButton;
+    padding: 10.5px 23px;
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+
+.c-def {
+    cursor: default;
+}
+
+.prevent-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
