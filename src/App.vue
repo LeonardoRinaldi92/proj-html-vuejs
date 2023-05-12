@@ -1,11 +1,13 @@
 <script >
   import topHeader from './components/topHeader.vue';
   import jumboTron from './components/jumboTron.vue';
+  import transportType from './components/transportType.vue';
   export default {
     name: 'App',
     components: {
       topHeader,
       jumboTron,
+      transportType
     }
   }
 
@@ -20,6 +22,7 @@
   <main>
     <section class="jumbo w-100">
       <jumboTron/>
+      <transportType/>
 
     </section>
 

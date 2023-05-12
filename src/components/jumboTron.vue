@@ -10,20 +10,20 @@ import logoMini from './logoMini.vue';
     <section>
         <div class="m-auto py-4" style="width: 60%">
             <nav class="d-flex w-100 justify-content-between align-items-center flex-wrap">
-                <div>
+                <div class="col-3">
                     <logoMini/>
                 </div>
-                <div>
-                    <span class="me-5 c-pointer prevent-select"><b>Home</b></span>
-                    <span class="me-5 c-pointer prevent-select"><b>about</b></span>
-                    <span class="me-5 c-pointer prevent-select"><b>services</b></span>
-                    <span class="me-5 c-pointer prevent-select"><b>process</b></span>
-                    <span class="me-5 c-pointer prevent-select"><b>testimonials</b></span>
-                    <i class="fa-solid fa-user me-5 c-pointer"></i>
+                <div class="col-9 d-flex flex-wrap justify-content-between align-items-center">
+                    <a href="/" class=" c-pointer prevent-select"><b>Home</b></a>
+                    <a href="#about" class=" c-pointer prevent-select"><b>about</b></a>
+                    <a href="/" class=" c-pointer prevent-select"><b>services</b></a>
+                    <a href="/" class=" c-pointer prevent-select"><b>process</b></a>
+                    <a href="/" class=" c-pointer prevent-select"><b>testimonials</b></a>
+                    <i class="fa-solid fa-user  c-pointer"></i>
                     <span class="button c-pointer prevent-select"><b>get in touch</b></span>
                 </div>
             </nav>
-            <div class="w-50" style="margin-top: 20%;">
+            <div class="w-50" style="margin-top: 15%;">
                 <span class="c-def prevent-select">
                     <b>
                         logistic services
@@ -62,24 +62,26 @@ import logoMini from './logoMini.vue';
         width:100%;
         background-color: rgba(32, 32, 32, 0.512);
     }
-    h1,span {
+    h1,
+    a,
+    span {
         text-transform: uppercase;
     }
     h1 {
         font-size: 4.5rem;
     }
-    span,
-    p {
+    
+    a,
+    p,
+    span {
         font-size: 1.1rem;
-
+        text-decoration: none;
     }
     .w-50 {
         span {
             b {
                 color: $skytext;
-            }
-            
+            } 
         }
-
     }
 </style>
