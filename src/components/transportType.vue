@@ -1,6 +1,13 @@
 <script>
-export default {
-    name: 'trasportType'
+    import {store} from '../store';
+    export default {
+    name: 'trasportType',
+    data () {
+        return {
+            store,
+        }
+        
+    }
 }
 
 </script>
@@ -8,13 +15,13 @@ export default {
     <div class="box100 d-flex align-items-center justify-content-center" id="about">
         <div style="width: 60%; height: 70%;" class="d-flex">
             <div class="col-9">
-                <span style="text-transform: uppercase;">
+                <span class="miniTitle">
                     <b>
                         who we are
                     </b>
                 </span>
-                <div class="excellence my-3">
-                    <span class="excellenceStyle me-2">
+                <div class="BigTitle my-3">
+                    <span class="colorato me-2">
                         <i class="fa-regular fa-gem"></i>
                         <b>
                             Excellence
@@ -59,54 +66,22 @@ export default {
                     </b>
                 </span>
                 <div class="w-100 d-flex flex-column sx-camioncini my-5">
-                    <div class="col-4 d-flex align-items-center justify-content-between">
+                    <div v-for="(element, index) in store.veichleType" :key="index" 
+                    class="col-4 d-flex align-items-center justify-content-between py-2">
                         <div style="background-color: rgba(0, 255, 255, 0.06);" class="p-2">
-                            <img src="/images/truck-1.png" alt="">
+                            <img :src="element.img" alt="">
                         </div>
                         <div>
                             <span>
                                 <b>
-                                    Light
+                                    {{ element.class }}
                                 </b>
                             </span>
                             <p>
-                                Max Weight 1200kg.
+                                {{ element.desc }}
                             </p>
                         </div>        
                     </div>
-                    <hr>
-                    <div class="col-4 d-flex align-items-center justify-content-between">
-                        <div style="background-color: rgba(0, 255, 255, 0.06);" class="p-2">
-                            <img src="/images/truck-1.png" alt="">
-                        </div> 
-                        <div>
-                            <span>
-                                <b>
-                                    Medium
-                                </b>
-                            </span>
-                            <p>
-                                Max Weight 6000kg.
-                            </p>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="col-4 d-flex align-items-center justify-content-between">
-                        <div style="background-color: rgba(0, 255, 255, 0.06);" class="p-2">
-                            <img src="/images/truck-1.png" alt="">
-                        </div>
-                        <div>
-                            <span>
-                                <b>
-                                    Heavy
-                                </b>
-                            </span>
-                            <p>
-                                Max Weight 24000kg.
-                            </p>
-                        </div> 
-                    </div>
-                    <hr>
                 </div>
                 <div class="premi">
                     <span>
@@ -131,10 +106,7 @@ export default {
 
 <style lang="scss" scoped>
      @import "../style/partials/_variables";
-    .box100 {
-        height: 100vh;
-        width: 100%;
-    }
+
     .col-9 {
         padding-right: 100px;
         span {
@@ -143,17 +115,6 @@ export default {
     }
 
     div{
-        .excellence {
-            font-size: 3.5rem;
-            span {
-                display: inline-block;
-            }
-        }
-        .excellenceStyle {
-            color: $skyButton;
-            background-color: $sky;
-            padding: 0px 15px;
-        }
 
         p,
         li,
@@ -175,9 +136,13 @@ export default {
             width: 100%;           
         }
         .sx-camioncini {
-            img {
-                height: 50px;
-            }
+                .col-4 {
+                    border-bottom: 1px solid $grey;
+                }
+
+                img {
+                    height: 50px;
+                }
         }
     }
 

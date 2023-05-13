@@ -16,7 +16,7 @@ import logoMini from './logoMini.vue';
                 <div class="col-9 d-flex flex-wrap justify-content-between align-items-center">
                     <a href="/" class=" c-pointer prevent-select"><b>Home</b></a>
                     <a href="#about" class=" c-pointer prevent-select"><b>about</b></a>
-                    <a href="/" class=" c-pointer prevent-select"><b>services</b></a>
+                    <a href="#mainService" class=" c-pointer prevent-select"><b>services</b></a>
                     <a href="/" class=" c-pointer prevent-select"><b>process</b></a>
                     <a href="/" class=" c-pointer prevent-select"><b>testimonials</b></a>
                     <i class="fa-solid fa-user  c-pointer"></i>
@@ -58,7 +58,7 @@ import logoMini from './logoMini.vue';
     }
 
     section{
-        height: 90vh;
+        height: 100vh;
         width:100%;
         background-color: rgba(32, 32, 32, 0.512);
     }

@@ -2,12 +2,14 @@
   import topHeader from './components/topHeader.vue';
   import jumboTron from './components/jumboTron.vue';
   import transportType from './components/transportType.vue';
+  import mainService from './components/mainService.vue';
   export default {
     name: 'App',
     components: {
       topHeader,
       jumboTron,
-      transportType
+      transportType,
+      mainService
     }
   }
 
@@ -23,6 +25,7 @@
     <section class="jumbo w-100">
       <jumboTron/>
       <transportType/>
+      <mainService/>
 
     </section>
 
@@ -36,7 +39,7 @@
     background-color: $darkblue;
   }
   .jumbo {
-    height: 90vh;
+    height: 100vh;
     background-image: url(images/bg-9.jpg);
     background-repeat: no-repeat;
     background-size: cover;
