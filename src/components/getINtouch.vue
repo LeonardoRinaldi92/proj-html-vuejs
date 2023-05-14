@@ -29,14 +29,16 @@
                     <p>
                         We will respond to your message soon as possible.
                     </p>
-                    <div class="row">
-                        <div class="col-6">
-                            <input type="text" placeholder="name" class="input6">
-                        </div>
-                        <div class="col-6">
-                            <input type="email" placeholder="email" class="input6">
-                        </div>
-
+                    <div>
+                        <input type="text" placeholder="name" class="me-3" style="width: 48%;">
+                        <input type="email" placeholder="email" style="width: 48%;">
+                        <input type="tel" placeholder="phone" class="me-3" style="width: 48%;">
+                        <select name="cosavuoi" id="" class="mt-3" style="width: 48%;">
+                            <option value="volvo">more info</option>
+                            <option value="saab">assistance</option>
+                            <option value="mercedes">track</option>
+                            <option value="audi">ciao leo</option>
+                        </select>
                     
 
                     </div>
@@ -67,7 +69,8 @@
         }
      }
 
-     input {
+     input,
+     select {
         width: 100%;
         height: 50px;
         border: none;
@@ -75,6 +78,8 @@
         border-radius: 5px;
         font-size: 1.2rem;
         padding-left: 15px;
+        color: $grey;
+        text-transform: capitalize;
         &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
           color: $grey;
           opacity: 1;
@@ -90,6 +95,12 @@
 
         &::-ms-input-placeholder { /* Microsoft Edge */
           color: $grey;
+          font-size: 1.2rem;
+          text-transform: capitalize;
+        }
+
+        option {
+            color: $grey;
           font-size: 1.2rem;
           text-transform: capitalize;
         }
