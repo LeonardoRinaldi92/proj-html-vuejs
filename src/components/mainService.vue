@@ -66,9 +66,7 @@ export default {
                             {{ element.desc }}
                         </p>
                     </div>
-
                 </div>
-
             </div>         
         </div>
     </section>

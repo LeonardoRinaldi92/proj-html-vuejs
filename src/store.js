@@ -40,5 +40,23 @@ export const store = reactive (
                 desc: "We work whit the most types of dry cargo, from valuable cargo to the most dangerous requing care."
 
             }
+        ],
+        reviews: [
+            {
+                logo: '/images/logo-1.png',
+                revs1: 'Ipsum optio molestias quisquam rerum necessitatibus labore vero consectetur nam.',
+                revs2: 'Quae modi numquam doloremque aliquid doloribus facilis aperiam exercitationem consequuntur reiciendis nesciunt.'
+                
+            },
+            {
+                logo: '/images/logo-2.png',
+                revs1: 'Ipsum optio molestias quisquam rerum necessitatibus labore vero consectetur nam.',
+                revs2: 'Quae modi numquam doloremque aliquid doloribus facilis aperiam exercitationem consequuntur reiciendis nesciunt.'
+            },
+            {
+                logo: '/images/logo-3.png',
+                revs1: 'Ipsum optio molestias quisquam rerum necessitatibus labore vero consectetur nam.',
+                revs2: 'Quae modi numquam doloremque aliquid doloribus facilis aperiam exercitationem consequuntur reiciendis nesciunt.'
+            }
         ]
     })

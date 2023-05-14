@@ -18,7 +18,7 @@ import logoMini from './logoMini.vue';
                     <a href="#about" class=" c-pointer prevent-select"><b>about</b></a>
                     <a href="#mainService" class=" c-pointer prevent-select"><b>services</b></a>
                     <a href="#procedure" class=" c-pointer prevent-select"><b>process</b></a>
-                    <a href="/" class=" c-pointer prevent-select"><b>testimonials</b></a>
+                    <a href="#testimonials" class=" c-pointer prevent-select"><b>testimonials</b></a>
                     <i class="fa-solid fa-user  c-pointer"></i>
                     <span class="button c-pointer prevent-select"><b>get in touch</b></span>
                 </div>
@@ -57,6 +57,8 @@ import logoMini from './logoMini.vue';
         color: white;
     }
 
+
+
     section{
         height: 100vh;
         width:100%;
@@ -84,4 +86,6 @@ import logoMini from './logoMini.vue';
             } 
         }
     }
+
+    
 </style>

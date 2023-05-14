@@ -5,6 +5,7 @@
   import mainService from './components/mainService.vue';
   import Logistical from './components/logistical.vue';
   import results from './components/results.vue';
+  import customersTestimonials from './components/customersTestimonials.vue';
 
   export default {
     name: 'App',
@@ -14,7 +15,8 @@
     transportType,
     mainService,
     Logistical,
-    results
+    results,
+    customersTestimonials
 },
   }
 
@@ -34,6 +36,7 @@
     <mainService/>
     <Logistical/>
     <results/>
+    <customersTestimonials/>
 
   </main>
 </template>
