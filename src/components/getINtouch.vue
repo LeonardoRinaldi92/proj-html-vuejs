@@ -31,16 +31,16 @@
                     </p>
                     <div>
                         <div class="row gx-2">
-                            <div class="col-6">
+                            <div class="col-xl-6 col-12">
                                 <input type="text" placeholder="name" >
                             </div>
-                            <div class="col-6">
+                            <div class="col-xl-6 col-12">
                                 <input type="email" placeholder="email">
                             </div>
-                            <div class="col-6 mt-2">
+                            <div class="col-xl-6 col-12 mt-2">
                                 <input type="tel" placeholder="phone">
                             </div>
-                            <div class="col-6">
+                            <div class="col-xl-6  col-12">
                                 <select name="cosavuoi" id="" class="mt-2" > 
                                     <option value="volvo">more info</option>
                                     <option value="saab">assistance</option>
