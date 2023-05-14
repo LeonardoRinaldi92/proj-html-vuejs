@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <div class="box50 d-flex">
+    <div class="box50 d-flex" id="footerSotto">
         ciao
     </div>
 

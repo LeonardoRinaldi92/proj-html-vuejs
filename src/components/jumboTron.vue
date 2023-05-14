@@ -7,7 +7,7 @@ import logoMini from './logoMini.vue';
 }
 </script>
 <template>
-    <section>
+    <section id="home">
         <div class="m-auto py-4" style="width: 60%">
             <nav class="d-flex w-100 justify-content-between align-items-center flex-wrap">
                 <div class="col-3">

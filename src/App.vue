@@ -20,9 +20,43 @@
     results,
     customersTestimonials,
     getINtouch,
-    footerComp
-},
-  }
+    footerComp,
+    },
+    data() {
+      return {
+        posizione : 0,
+        arrayPoistion: [
+          'home',
+          'about',
+          'mainService',
+          'procedure',
+          'results',
+          'testimonials',
+          'getinTouch',
+          'footerSotto'
+        ]
+      }
+    },
+    
+      methods: {
+        letSGo(e){
+          if (e.deltaY > 0) {
+            console.log(this.arrayPoistion.length)
+            if (this.posizione < this.arrayPoistion.length-1)  {
+            console.log(this.arrayPoistion[this.posizione])
+            this.posizione ++
+            document.getElementById(this.arrayPoistion[this.posizione]).scrollIntoView({behavior: 'smooth'});
+            }
+          } else {
+            if(this.posizione > 0){
+              this.posizione --
+              document.getElementById(this.arrayPoistion[this.posizione]).scrollIntoView({behavior: 'smooth'});
+            }
+          }
+          // console.log('ciao')    
+        }
+      },
+    }
 
 </script>
 
@@ -32,7 +66,7 @@
       <topHeader/>
     </div>
   </header>
-  <main>
+  <main @wheel.prevent="letSGo($event)">
     <section class="jumbo w-100">
       <jumboTron/>
     </section>
@@ -43,7 +77,7 @@
     <customersTestimonials/>
     <getINtouch/>
   </main>
-  <footer>
+  <footer @wheel.prevent="letSGo">
     <footerComp/>
   </footer>
 </template>

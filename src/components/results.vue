@@ -5,7 +5,7 @@
 </script>
 
 <template>
-    <div class="box60">
+    <div class="box60" id="results">
         <div class="text-center m-auto" style="width: 80%;height: 90%;">
             <span class="miniTitle">
                 <b>
