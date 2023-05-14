@@ -20,7 +20,7 @@ import logoMini from './logoMini.vue';
                     <a href="#procedure" class=" c-pointer prevent-select"><b>process</b></a>
                     <a href="#testimonials" class=" c-pointer prevent-select"><b>testimonials</b></a>
                     <i class="fa-solid fa-user  c-pointer"></i>
-                    <span class="button c-pointer prevent-select"><b>get in touch</b></span>
+                    <a href="#getinTouch" class="button c-pointer prevent-select"><b>get in touch</b></a>
                 </div>
             </nav>
             <div class="w-50" style="margin-top: 15%;">

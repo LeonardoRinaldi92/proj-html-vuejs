@@ -6,6 +6,7 @@
   import Logistical from './components/logistical.vue';
   import results from './components/results.vue';
   import customersTestimonials from './components/customersTestimonials.vue';
+  import getINtouch from './components/getINtouch.vue';
 
   export default {
     name: 'App',
@@ -16,7 +17,8 @@
     mainService,
     Logistical,
     results,
-    customersTestimonials
+    customersTestimonials,
+    getINtouch
 },
   }
 
@@ -37,6 +39,7 @@
     <Logistical/>
     <results/>
     <customersTestimonials/>
+    <getINtouch/>
 
   </main>
 </template>
