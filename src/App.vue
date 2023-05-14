@@ -7,6 +7,7 @@
   import results from './components/results.vue';
   import customersTestimonials from './components/customersTestimonials.vue';
   import getINtouch from './components/getINtouch.vue';
+  import footerComp from './components/footerComp.vue';
 
   export default {
     name: 'App',
@@ -18,7 +19,8 @@
     Logistical,
     results,
     customersTestimonials,
-    getINtouch
+    getINtouch,
+    footerComp
 },
   }
 
@@ -40,8 +42,10 @@
     <results/>
     <customersTestimonials/>
     <getINtouch/>
-
   </main>
+  <footer>
+    <footerComp/>
+  </footer>
 </template>
 
 <style lang="scss">
