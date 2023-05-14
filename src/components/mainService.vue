@@ -12,7 +12,7 @@ export default {
 }
 </script>
 <template>
-    <section id="mainService" class="box100 d-flex align-items-center justify-content-center">
+    <section id="mainService" class="box95 d-flex align-items-center justify-content-center">
         <div style="width: 60%; height: 70%">
             <span class="miniTitle">
                 <b>
@@ -25,7 +25,7 @@ export default {
                         Main
                     </b>
                 </span>
-                <span class="colorato">
+                <span class="colorato" style="color:white">
                     <b>
                         Services
                     </b>

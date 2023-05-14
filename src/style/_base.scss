@@ -31,7 +31,7 @@
 }
 
 .colorato {
-    color: $skyButton;
+    color: $blue;
     background-color: $sky;
     padding: 0px 15px;
 }
@@ -41,9 +41,15 @@
     width: 100%;
 }
 
-.box80 {
+.box95 {
+    height: 95vh;
+    width: 100%;
+}
+
+.box80{
     height: 80vh;
     width: 100%;
+
 }
 
 .miniTitle {

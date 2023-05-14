@@ -3,14 +3,17 @@
   import jumboTron from './components/jumboTron.vue';
   import transportType from './components/transportType.vue';
   import mainService from './components/mainService.vue';
+  import Logistical from './components/logistical.vue';
+
   export default {
     name: 'App',
     components: {
-      topHeader,
-      jumboTron,
-      transportType,
-      mainService
-    }
+    topHeader,
+    jumboTron,
+    transportType,
+    mainService,
+    Logistical
+},
   }
 
 </script>
@@ -24,10 +27,10 @@
   <main>
     <section class="jumbo w-100">
       <jumboTron/>
-      <transportType/>
-      <mainService/>
-
     </section>
+    <transportType/>
+    <mainService/>
+    <Logistical/>
 
   </main>
 </template>

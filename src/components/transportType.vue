@@ -109,9 +109,6 @@
 
     .col-9 {
         padding-right: 100px;
-        span {
-            color: $blue
-        }
     }
 
     div{
