@@ -4,6 +4,7 @@
   import transportType from './components/transportType.vue';
   import mainService from './components/mainService.vue';
   import Logistical from './components/logistical.vue';
+  import results from './components/results.vue';
 
   export default {
     name: 'App',
@@ -12,7 +13,8 @@
     jumboTron,
     transportType,
     mainService,
-    Logistical
+    Logistical,
+    results
 },
   }
 
@@ -31,6 +33,7 @@
     <transportType/>
     <mainService/>
     <Logistical/>
+    <results/>
 
   </main>
 </template>
