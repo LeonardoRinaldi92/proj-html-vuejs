@@ -30,15 +30,26 @@
                         We will respond to your message soon as possible.
                     </p>
                     <div>
-                        <input type="text" placeholder="name" class="me-3" style="width: 48%;">
-                        <input type="email" placeholder="email" style="width: 48%;">
-                        <input type="tel" placeholder="phone" class="me-3" style="width: 48%;">
-                        <select name="cosavuoi" id="" class="mt-3" style="width: 48%;">
-                            <option value="volvo">more info</option>
-                            <option value="saab">assistance</option>
-                            <option value="mercedes">track</option>
-                            <option value="audi">ciao leo</option>
-                        </select>
+                        <div class="row gx-2">
+                            <div class="col-6">
+                                <input type="text" placeholder="name" >
+                            </div>
+                            <div class="col-6">
+                                <input type="email" placeholder="email">
+                            </div>
+                            <div class="col-6 mt-2">
+                                <input type="tel" placeholder="phone">
+                            </div>
+                            <div class="col-6">
+                                <select name="cosavuoi" id="" class="mt-2" > 
+                                    <option value="volvo">more info</option>
+                                    <option value="saab">assistance</option>
+                                    <option value="mercedes">track</option>
+                                    <option value="audi">ciao leo</option>
+                                </select>
+                            </div>
+
+                        </div>
                     
 
                     </div>
