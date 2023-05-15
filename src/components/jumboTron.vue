@@ -30,9 +30,9 @@
                     Fractional or exclusive road cargo transportation to all regions, whit small, mediuem and large vehicles.
                 </p>
                 <div class="d-flex align-items-center">
-                    <span class="button me-5 c-pointer prevent-select">
+                    <a href="#getinTouch" @click="store.posizione = 6;$emit('cambioposizione')" class="button me-5 c-pointer prevent-select">
                         get in touch
-                    </span>
+                    </a>
                     <span class="reverseButton c-pointer prevent-select">
                         read more
                     </span>

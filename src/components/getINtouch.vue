@@ -9,28 +9,28 @@
         <div class="m-auto" style="width: 70%;">
             <div class="row" style="padding-right: 50px;">
                 <div class="col-8">
-                    <span class="miniTitle">
+                    <span class="miniTitle prevent-select">
                         <b>
                             send a message
                         </b>
                     </span>
-                    <div class="BigTitle my-3">
+                    <div class="BigTitle my-3 prevent-select">
                         <span>
                             <b>
                                 Get in 
                             </b>
                         </span>
-                        <span class="colorato ms-2">
+                        <span class="colorato ms-2 prevent-select">
                             <b>
                                 Touch
                             </b>
                         </span>
                     </div>
-                    <p>
+                    <p class="prevent-select">
                         We will respond to your message soon as possible.
                     </p>
                     <div>
-                        <div class="row gx-3 mt-5">
+                        <div class="row gx-3 mt-5 prevent-select">
                             <div class="col-xl-6 col-12">
                                 <input type="text" placeholder="name" >
                             </div>
@@ -51,26 +51,26 @@
                                 <textarea name="" id="" cols="98" rows="6" placeholder="Message"></textarea>
                             </div>
                             <div class="col-2 mt-3">
-                                <button class="button" type="submit">
+                                <button class="button prevent-select" type="submit">
                                     send
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <span>
+                <div class="col-4 ">
+                    <span class="prevent-select">
                         <b>
                             Example Inc.
                         </b>
                     </span>
-                    <p>
+                    <p class="prevent-select">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <p>
+                    <p class="prevent-select">
                         Ad modi, rem, mollitia molestias laudantium vero ab dolorem iste est iusto.
                     </p>
-                    <div class="d-flex align-items-end">
+                    <div class="d-flex align-items-end c-def">
                         <div>
                             <i class="fa-solid fa-phone round-icon"></i>
                         </div>
@@ -100,7 +100,7 @@
                             </p>
                         </div>
                     </div>
-                    <button class="reverseButton">
+                    <button class="reverseButton prevent-select">
                         view map
                     </button>
                 </div>

@@ -12,7 +12,7 @@ import { store } from '../store';
 
 <template>
     <div class="box90" id="testimonials">
-        <div class="text-center m-auto" style="width: 80%; height: 90%;">
+        <div class="text-center m-auto prevent-select" style="width: 80%; height: 90%;">
             <span class="miniTitle">
                 <b>
                     customers testimonials
@@ -75,6 +75,8 @@ import { store } from '../store';
     .schedina {
             background-color: $nonNero;
             min-height: 250px;
+            display: flex;
+            flex-direction: column;
 
             &:nth-child(even) {
                 margin: 0px 40px;
@@ -85,19 +87,16 @@ import { store } from '../store';
             }
             img {
                 filter: brightness(0) invert(1);
-                height: 25px;
+                width: 150px;
             }
             span {
                 color: white;
                 font-size: 1.5rem;
             }
             .fa-quote-right {
-                position: absolute;
                 font-size: 3rem;
-                margin-left: 250px;
-                bottom: 20px;
                 color: $grey;
-
+                align-self: self-end;
             }
         }
     }

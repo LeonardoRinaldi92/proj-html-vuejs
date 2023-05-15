@@ -6,7 +6,7 @@
 
 <template>
     <div class="box60" id="results">
-        <div class="text-center m-auto" style="width: 80%;height: 90%;">
+        <div class="text-center m-auto prevent-select" style="width: 80%;height: 90%;">
             <span class="miniTitle">
                 <b>
                     what are we doing

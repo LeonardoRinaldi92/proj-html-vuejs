@@ -17,32 +17,32 @@
             <div class="row gx-5 justify-content-between">
                 <div class="col-3">
                     <logoMini/>
-                    <p class="mt-3">
+                    <p class="mt-3 prevent-select">
                         A fuctional HTML template for corporate & Business.
                     </p>
-                    <p>
+                    <p class="c-def">
                         <i class="fa-solid fa-phone round-icon"></i>
                         <span>
                             +1 (305) 1234-5678
                         </span>
                     </p>
-                    <p>
+                    <p class="c-def">
                         <i class="fa-solid fa-envelope round-icon"></i>
                         <span>
                             hello@emaple.com
                         </span>
                     </p>
-                    <p>
+                    <p class="c-def">
                         <i class="fa-solid fa-location-dot round-icon"></i>
                         <span>
                             Main Avenue, 987
                         </span>
                     </p>
-                    <span class="reverseButton">
+                    <span class="reverseButton prevent-select">
                         GET IN TOUCH
                     </span>
                 </div>
-                <div class="col-9 d-flex">
+                <div class="col-9 d-flex prevent-select">
                     <div class="col-4 schedina">
                         <span>
                             <b>

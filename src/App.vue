@@ -122,7 +122,7 @@
       </nav>
     </div>
     <section class="jumbo w-100">
-      <jumboTron/>
+      <jumboTron @cambioposizione="navPosition()" />
     </section>
     <transportType/>
     <mainService/>
@@ -133,7 +133,7 @@
   </main>
   <footer @wheel.prevent="letSGo">
     <footerComp/>
-    <div class="bottomFooter">
+    <div class="bottomFooter prevent-select">
       <div  class="m-auto d-flex justify-content-between align-items-center" style="width: 60%;">
         <span>
           Enjoy the low price.We are tracking any intention of puracy.

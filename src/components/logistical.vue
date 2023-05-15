@@ -15,7 +15,7 @@ export default {
         <div class="laneGreen" id="laneGreen">
 
         </div>
-        <div style="width:80%;" class="text-center">
+        <div style="width:80%;" class="text-center prevent-select">
             <span class="miniTitle">
                 <b>
                     how it works in practice

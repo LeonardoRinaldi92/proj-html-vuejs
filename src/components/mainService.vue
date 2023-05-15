@@ -14,12 +14,12 @@ export default {
 <template>
     <section id="mainService" class="box95 d-flex align-items-center justify-content-center">
         <div style="width: 60%; height: 70%">
-            <span class="miniTitle">
+            <span class="miniTitle prevent-select">
                 <b>
                     road transport
                 </b>
             </span>
-            <div class="BigTitle my-3">
+            <div class="BigTitle my-3 prevent-select">
                 <span style="color: white;" class="me-2">
                     <b>
                         Main
@@ -33,14 +33,14 @@ export default {
             </div>
             <div class="row">
                 <div class="col-9">
-                    <p>
+                    <p class="prevent-select">
                         <b>
                             Whit all of this expertise and capability come an unrivalled commitment serive. We woll work to undestand your needs in order to develop a productive, long-term partnership.
                         </b>
                     </p>
                 </div>
                 <div class="col-3 d-flex justify-content-end">
-                    <span class="reverseButton">
+                    <span class="reverseButton c-pointer prevent-select">
                         see all
                     </span>
                 </div>
@@ -53,10 +53,10 @@ export default {
                             <i :class="element.icon"></i>
                         </div>
                         <div class="col-6 d-flex justify-content-end">
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i class="fa-solid fa-arrow-right c-pointer"></i>
                         </div>
                     </div>
-                    <div class="my-3">
+                    <div class="my-3 prevent-select">
                         <span>
                             <b>
                                 {{ element.type }}
@@ -96,7 +96,13 @@ export default {
 
             .col-6 {
                 font-size: 1.5rem;
-                color: $sky
+                color: $sky;
+                i{
+                    &:hover {
+                        color: $blue;
+                    }
+
+                }
             }
 
             .round-icon {

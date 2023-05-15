@@ -14,7 +14,7 @@
 <template>
     <div class="box100 d-flex align-items-center justify-content-center" id="about">
         <div style="width: 60%; height: 70%;" class="d-flex">
-            <div class="col-9">
+            <div class="col-9 prevent-select">
                 <span class="miniTitle">
                     <b>
                         who we are
@@ -59,7 +59,7 @@
                 </ul>
             </div>
             
-            <div class="col-3">
+            <div class="col-3 prevent-select">
                 <span>
                     <b>
                         Vehicle Types
