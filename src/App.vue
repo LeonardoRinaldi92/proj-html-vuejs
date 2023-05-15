@@ -82,6 +82,11 @@
     </div>
   </header>
   <main @wheel.prevent="letSGo($event)">
+    <div id="top">
+      <span>
+        DAJE
+      </span>
+    </div>
     <section class="jumbo w-100">
       <jumboTron/>
     </section>
@@ -115,6 +120,19 @@
 <style lang="scss">
   @use './style/main.scss';
   @import "./style/partials/_variables";
+
+  *{
+    position: relative;
+  }
+
+  #top {
+    position: fixed;
+    top: 90vh;
+    font-size: 5rem;
+    right: 0;
+    z-index: 99999999999999999999999;
+  }
+
   header{
     background-color: $darkblue;
   }
