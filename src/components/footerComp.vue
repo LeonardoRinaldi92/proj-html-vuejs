@@ -40,7 +40,6 @@
                     </p>
                     <span class="reverseButton">
                         GET IN TOUCH
-
                     </span>
                 </div>
                 <div class="col-9 d-flex">
@@ -59,8 +58,36 @@
                             <li>technology</li>
                         </ul>
                     </div>
-                    <div class="col-4 schedina"></div>
-                    <div class="col-4 schedina"></div>
+                    <div class="col-4 schedina">
+                        <span>
+                            <b>
+                                Transport
+                            </b>
+                        </span>
+                        <ul>
+                            <li>industrialyzed</li>
+                            <li>chemicals</li>
+                            <li>packaged liquids</li>
+                            <li>pconstruction</li>
+                            <li>laminated wood</li>
+                            <li>and others</li>
+                        </ul>
+                    </div>
+                    <div class="col-4 schedina">
+                        <span>
+                            <b>
+                                Support
+                            </b>
+                        </span>
+                        <ul>
+                            <li>responsibiluty</li>
+                            <li>term of use</li>
+                            <li>about cookies</li>
+                            <li>privacy policy</li>
+                            <li>accessibility</li>
+                            <li>information</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,6 +147,9 @@
                         display: inline-block;
                         text-transform: capitalize;
                         margin-top: 10px;
+                        &:hover {
+                            color: white;
+                        }
                         &::before {
                         content:"\f054";
                         display:inline-block; /* no underline on hover */
@@ -127,6 +157,10 @@
                         font-family: FontAwesome;
                         font-size: 1.3rem;
                         line-height: .8em;
+                        }
+
+                        &:hover::before {
+                            font-size: 1.6rem;
                         }
                     }
                 }

@@ -94,6 +94,21 @@
   </main>
   <footer @wheel.prevent="letSGo">
     <footerComp/>
+    <div class="bottomFooter">
+      <div  class="m-auto d-flex justify-content-between align-items-center" style="width: 60%;">
+        <span>
+          Enjoy the low price.We are tracking any intention of puracy.
+        </span>
+        <span>
+          &#64;2023 NEXGEN is Proudly Powered by 
+          <span class="code">
+            Codings
+          </span>
+        </span>
+
+      </div>
+
+    </div>
   </footer>
 </template>
 
@@ -108,6 +123,19 @@
     background-image: url(images/bg-9.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .bottomFooter {
+    background-color: black;
+    width: 100%;
+    .m-auto{
+      height: 100px;
+      span {
+        color: $grey;
+        .code {
+          color: $blue;
+        }
+      }
+    } 
   }
 
 
