@@ -44,7 +44,21 @@
                     </span>
                 </div>
                 <div class="col-9 d-flex">
-                    <div class="col-4 schedina"></div>
+                    <div class="col-4 schedina">
+                        <span>
+                            <b>
+                                About
+                            </b>
+                        </span>
+                        <ul>
+                            <li>the company</li>
+                            <li>istitutional</li>
+                            <li>social & events</li>
+                            <li>innovation</li>
+                            <li>enviroments</li>
+                            <li>technology</li>
+                        </ul>
+                    </div>
                     <div class="col-4 schedina"></div>
                     <div class="col-4 schedina"></div>
                 </div>
@@ -69,6 +83,7 @@
                 span {
                     margin-left: 10px;
                 }
+
             }
 
             .reverseButton {
@@ -80,12 +95,41 @@
         .schedina {
             background-color: $nonNero;
             min-height: 350px;
-            padding: 0px 20px;
+            padding: 0px 40px;
             border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             &:nth-child(even) {
                 margin: 0px 20px;
             }
-
+            span {
+                color: white;
+                font-size: 1.5rem;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+                margin-top: 15px;
+                    li {
+                        color: $grey;
+                        font-size: 1.2rem;
+                        list-style-type: none;
+                        display: inline-block;
+                        text-transform: capitalize;
+                        margin-top: 10px;
+                        &::before {
+                        content:"\f054";
+                        display:inline-block; /* no underline on hover */
+                        margin-right: 5px;
+                        font-family: FontAwesome;
+                        font-size: 1.3rem;
+                        line-height: .8em;
+                        }
+                    }
+                }
         }
     }
 </style>
