@@ -38,7 +38,7 @@
                             Main Avenue, 987
                         </span>
                     </p>
-                    <span class="reverseButton prevent-select">
+                    <span class="reverseButton prevent-select c-pointer">
                         GET IN TOUCH
                     </span>
                 </div>
@@ -50,12 +50,12 @@
                             </b>
                         </span>
                         <ul>
-                            <li>the company</li>
-                            <li>istitutional</li>
-                            <li>social & events</li>
-                            <li>innovation</li>
-                            <li>enviroments</li>
-                            <li>technology</li>
+                            <li class="c-pointer">the company</li>
+                            <li class="c-pointer">istitutional</li>
+                            <li class="c-pointer">social & events</li>
+                            <li class="c-pointer">innovation</li>
+                            <li class="c-pointer">enviroments</li>
+                            <li class="c-pointer">technology</li>
                         </ul>
                     </div>
                     <div class="col-4 schedina">
@@ -65,12 +65,12 @@
                             </b>
                         </span>
                         <ul>
-                            <li>industrialyzed</li>
-                            <li>chemicals</li>
-                            <li>packaged liquids</li>
-                            <li>pconstruction</li>
-                            <li>laminated wood</li>
-                            <li>and others</li>
+                            <li class="c-pointer">industrialyzed</li>
+                            <li class="c-pointer">chemicals</li>
+                            <li class="c-pointer">packaged liquids</li>
+                            <li class="c-pointer">pconstruction</li>
+                            <li class="c-pointer">laminated wood</li>
+                            <li class="c-pointer">and others</li>
                         </ul>
                     </div>
                     <div class="col-4 schedina">
@@ -80,12 +80,12 @@
                             </b>
                         </span>
                         <ul>
-                            <li>responsibiluty</li>
-                            <li>term of use</li>
-                            <li>about cookies</li>
-                            <li>privacy policy</li>
-                            <li>accessibility</li>
-                            <li>information</li>
+                            <li class="c-pointer">responsibiluty</li>
+                            <li class="c-pointer">term of use</li>
+                            <li class="c-pointer">about cookies</li>
+                            <li class="c-pointer">privacy policy</li>
+                            <li class="c-pointer">accessibility</li>
+                            <li class="c-pointer">information</li>
                         </ul>
                     </div>
                 </div>
