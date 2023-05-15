@@ -58,5 +58,7 @@ export const store = reactive (
                 revs1: 'Ipsum optio molestias quisquam rerum necessitatibus labore vero consectetur nam.',
                 revs2: 'Quae modi numquam doloremque aliquid doloribus facilis aperiam exercitationem consequuntur reiciendis nesciunt.'
             }
-        ]
+        ],
+        posizione : 0,
+        posizioneCard : 0,
     })

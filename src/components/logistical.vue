@@ -1,6 +1,12 @@
 <script>
+import { store } from '../store';
 export default {
     name: 'logistical',
+    data() {
+        return {
+            store
+        }
+    }
 }
 
 </script>
@@ -32,8 +38,8 @@ export default {
                     We work whit innovative methodologies to ensure that the entire delivery preocess is done from start to finish as planned
                 </p>
             </div>
-            <div class="row justify-content-between my-5">
-                <div class="col-2 text-center my-4 p-2" style="z-index: 999;">
+            <div class="row my-5 justify-content-between" :class="(store.posizioneCard >= 4)? '' : ''">
+                <div v-if="store.posizioneCard >= 0" class="col-2 text-center my-4 p-2" style="z-index: 999;">
                     <div class="number m-auto">
                         <b>
                             01
@@ -48,7 +54,7 @@ export default {
                         Lorem ipsum dolor,sit amet consectur
                     </span>
                 </div>
-                <div class="col-2 text-center my-4 p-2" style="z-index: 999;">
+                <div v-if="store.posizioneCard >= 1 " class="col-2 text-center my-4 p-2" style="z-index: 999;">
                     <div class="number m-auto">
                         <b>
                             02
@@ -63,7 +69,7 @@ export default {
                         Lorem ipsum dolor,sit amet consectur
                     </span>
                 </div>
-                <div class="col-2 text-center my-4 p-2" style="z-index: 999;">
+                <div v-if="store.posizioneCard >= 2" class="col-2 text-center my-4 p-2" style="z-index: 999;">
                     <div class="number m-auto">
                         <b>
                             03
@@ -78,10 +84,10 @@ export default {
                         Lorem ipsum dolor,sit amet consectur
                     </span>
                 </div>
-                <div class="col-2 text-center my-4 p-2" style="z-index: 999;">
+                <div v-if="store.posizioneCard >= 3" class="col-2 text-center my-4 p-2" style="z-index: 999;">
                     <div class="number m-auto">
                         <b>
-                            03
+                            04
                         </b>
                     </div>
                     <p>
@@ -93,10 +99,10 @@ export default {
                         Lorem ipsum dolor,sit amet consectur
                     </span>
                 </div>
-                <div class="col-2 text-center my-4 " style="z-index: 999;">
+                <div v-if="store.posizioneCard >= 4" class="col-2 text-center my-4 " style="z-index: 999;">
                     <div class="number m-auto">
                         <b>
-                            03
+                            05
                         </b>
                     </div>
                     <p>
