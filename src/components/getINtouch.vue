@@ -80,7 +80,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex align-items-end mt-3">
+                    <div class="d-flex align-items-end mt-2">
                         <div>
                             <i class="fa-solid fa-envelope round-icon"></i>
                         </div>
@@ -90,7 +90,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex align-items-end mt-3">
+                    <div class="d-flex align-items-end mt-2">
                         <div>
                             <i class="fa-solid fa-location-dot round-icon"></i>
                         </div>
@@ -128,7 +128,7 @@
         }
      input,
      select {
-        height: 70px;
+        height: 60px;
 
      }
 
@@ -178,18 +178,18 @@
             color: white;
             text-transform: uppercase;
             border: none;
-            height: 60px;
+            height: 50px;
             width: 120px;
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             margin-top: 20px;
         }
     .reverseButton {
         margin-top: 50px;
         text-transform: uppercase;
         color: $blue;
-        height: 60px;
+        height: 50px;
         width: 180px;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
     .col-4 {
         padding-left: 60px;
@@ -202,10 +202,10 @@
             color: $grey;
         }
         .round-icon {
-                font-size: 2rem;
+                font-size: 1.4rem;
                 color: $blue;
                 background-color: $sky;
-                width: 4rem;
+                width: 2.8rem;
                 aspect-ratio: 1;
                 display: flex;
                 align-items: center;
