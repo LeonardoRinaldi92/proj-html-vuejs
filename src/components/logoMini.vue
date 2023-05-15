@@ -11,7 +11,7 @@ export default {
                 nex
             </b>
         </span>
-        <span style="letter-spacing: 4px;">
+        <span style="letter-spacing: 4px;" class="gen">
             <b>
                 gen
             </b>
@@ -33,5 +33,10 @@ export default {
         color: white;
         text-transform: uppercase;
         font-size: 1.5rem;
+        
+    }
+    .gen {
+        text-shadow: -1px 0 gray, 0 1px grey, 1px 0 grey, 0 -1px grey;
+
     }
 </style>
