@@ -45,7 +45,17 @@
             console.log(this.arrayPoistion.length)
             if (store.posizione < this.arrayPoistion.length-1)  {
               if (store.posizione == 3 && store.posizioneCard < 4){
-                store.posizioneCard ++ 
+                store.posizioneCard ++
+                if (store.posizioneCard == 1) {
+                  document.getElementById('laneGreen').style.right = "68%" 
+                } else if (store.posizioneCard == 2) {
+                  document.getElementById('laneGreen').style.right = "50%" 
+                } else if (store.posizioneCard == 3) {
+                  document.getElementById('laneGreen').style.right = "33%" 
+                } else {
+                  document.getElementById('laneGreen').style.right = "0"
+                }
+
               } else {
                 console.log(this.arrayPoistion[store.posizione])
               store.posizione ++

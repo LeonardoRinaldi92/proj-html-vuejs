@@ -42,14 +42,13 @@
                             </div>
                             <div class="col-xl-6  col-12 mt-2">
                                 <select name="cosavuoi" id="tipodiAiuto" class="mt-2" > 
-                                    <option value="volvo">more info</option>
-                                    <option value="saab">assistance</option>
-                                    <option value="mercedes">track</option>
-                                    <option value="audi">ciao leo</option>
+                                    <option value="info">more info</option>
+                                    <option value="assistance">assistance</option>
+                                    <option value="tracker">tracker ID</option>
                                 </select>
                             </div>
                             <div class="col-12 mt-3" >
-                                <textarea name="" id="" cols="98" rows="7" placeholder="Message"></textarea>
+                                <textarea name="" id="" cols="98" rows="6" placeholder="Message"></textarea>
                             </div>
                             <div class="col-2 mt-3">
                                 <button class="button" type="submit">
@@ -106,10 +105,7 @@
                     </button>
                 </div>
             </div>
-
-
-        </div>
-        
+        </div>   
     </div>
 </template>
 
@@ -117,7 +113,7 @@
      @import "../style/partials/_variables";
      .box95 {
         background-color: white;
-        padding: 150px;
+        padding: 100px;
      }
 
      .col-8 {

@@ -12,7 +12,7 @@ export default {
 </script>
 <template>
     <div class="box80 d-flex align-items-center justify-content-center position-relative" id="procedure">
-        <div class="laneGreen">
+        <div class="laneGreen" id="laneGreen">
 
         </div>
         <div style="width:80%;" class="text-center">
@@ -38,79 +38,79 @@ export default {
                     We work whit innovative methodologies to ensure that the entire delivery preocess is done from start to finish as planned
                 </p>
             </div>
-            <div class="row my-5 justify-content-between" :class="(store.posizioneCard >= 4)? '' : ''">
-                <div v-if="store.posizioneCard >= 0" class="col-2 text-center my-4 p-2" style="z-index: 999;">
-                    <div class="number m-auto">
+            <div class="row my-5 justify-content-between">
+                <div  class="col-2 text-center my-4 p-2" style="z-index: 999;">
+                    <div v-show="store.posizioneCard >= 0" class="number m-auto">
                         <b>
                             01
                         </b>
                     </div>
-                    <p>
+                    <p v-show="store.posizioneCard >= 0">
                         <b>
                             Collection of Informaton
                         </b>
                     </p>
-                    <span>
+                    <span v-show="store.posizioneCard >= 0">
                         Lorem ipsum dolor,sit amet consectur
                     </span>
                 </div>
-                <div v-if="store.posizioneCard >= 1 " class="col-2 text-center my-4 p-2" style="z-index: 999;">
-                    <div class="number m-auto">
+                <div class="col-2 text-center my-4 p-2" style="z-index: 999;">
+                    <div  v-show="store.posizioneCard >= 1" class="number m-auto">
                         <b>
                             02
                         </b>
                     </div>
-                    <p>
+                    <p  v-show="store.posizioneCard >= 1">
                         <b>
                             Service invoice Sending
                         </b>
                     </p>
-                    <span>
+                    <span  v-show="store.posizioneCard >= 1">
                         Lorem ipsum dolor,sit amet consectur
                     </span>
                 </div>
-                <div v-if="store.posizioneCard >= 2" class="col-2 text-center my-4 p-2" style="z-index: 999;">
-                    <div class="number m-auto">
+                <div class="col-2 text-center my-4 p-2" style="z-index: 999;">
+                    <div  v-show="store.posizioneCard >= 2" class="number m-auto">
                         <b>
                             03
                         </b>
                     </div>
-                    <p>
+                    <p  v-show="store.posizioneCard >= 2">
                         <b>
                             Whitdrawal of Cargo
                         </b>
                     </p>
-                    <span>
+                    <span  v-show="store.posizioneCard >= 2">
                         Lorem ipsum dolor,sit amet consectur
                     </span>
                 </div>
-                <div v-if="store.posizioneCard >= 3" class="col-2 text-center my-4 p-2" style="z-index: 999;">
-                    <div class="number m-auto">
+                <div class="col-2 text-center my-4 p-2" style="z-index: 999;">
+                    <div  v-show="store.posizioneCard >= 3" class="number m-auto">
                         <b>
                             04
                         </b>
                     </div>
-                    <p>
+                    <p  v-show="store.posizioneCard >= 3">
                         <b>
                             Transport customer Order
                         </b>
                     </p>
-                    <span>
+                    <span  v-show="store.posizioneCard >= 3">
                         Lorem ipsum dolor,sit amet consectur
                     </span>
                 </div>
-                <div v-if="store.posizioneCard >= 4" class="col-2 text-center my-4 " style="z-index: 999;">
-                    <div class="number m-auto">
+                <div class="col-2 text-center my-4 p-2" style="z-index: 999;">
+                    <div  v-show="store.posizioneCard >= 4" class="number m-auto">
                         <b>
                             05
                         </b>
                     </div>
-                    <p>
+                    <p  v-show="store.posizioneCard >= 4">
                         <b>
                             Succesful delivery
                         </b>
                     </p>
-                    <span>
+                    <span  v-show="store.posizioneCard >= 4">
                         Lorem ipsum dolor,sit amet consectur
                     </span>
                 </div>
@@ -127,7 +127,7 @@ export default {
         position: absolute;
         top: 51%;
         left: 0;
-        right: 0;
+        right: 85%;
     }
     .box80 {
         background-color: $verdino;
