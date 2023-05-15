@@ -107,19 +107,19 @@
   <main @wheel.prevent="letSGo($event)">
     <div id="navbarra">
       <nav class="d-flex w-100 justify-content-between align-items-center flex-wrap">
-                <div class="col-3">
-                    <logoMini/>
-                </div>
-                <div class="col-9 d-flex flex-wrap justify-content-between align-items-center">
-                    <a href="/" class="c-pointer prevent-select"><b>Home</b></a>
-                    <a href="#about" @click="store.posizione = 1;navPosition()" class=" c-pointer prevent-select"><b>about</b></a>
-                    <a href="#mainService"  @click="store.posizione = 2;navPosition()" class=" c-pointer prevent-select"><b>services</b></a>
-                    <a href="#procedure"  @click="store.posizione = 3;navPosition()" class=" c-pointer prevent-select"><b>process</b></a>
-                    <a href="#testimonials"  @click="store.posizione = 5;navPosition()" class=" c-pointer prevent-select"><b>testimonials</b></a>
-                    <i class="fa-solid fa-user  c-pointer"></i>
-                    <a href="#getinTouch" @click="store.posizione = 6;navPosition()" class="button c-pointer prevent-select"><b>get in touch</b></a>
-                </div>
-            </nav>
+        <div class="col-3">
+            <logoMini/>
+        </div>
+        <div class="col-9 d-flex flex-wrap justify-content-between align-items-center">
+            <a href="/" class="c-pointer prevent-select"><b>Home</b></a>
+            <a href="#about" @click="store.posizione = 1;navPosition()" class=" c-pointer prevent-select"><b>about</b></a>
+            <a href="#mainService"  @click="store.posizione = 2;navPosition()" class=" c-pointer prevent-select"><b>services</b></a>
+            <a href="#procedure"  @click="store.posizione = 3;navPosition()" class=" c-pointer prevent-select"><b>process</b></a>
+            <a href="#testimonials"  @click="store.posizione = 5;navPosition()" class=" c-pointer prevent-select"><b>testimonials</b></a>
+            <i class="fa-solid fa-user  c-pointer"></i>
+            <a href="#getinTouch" @click="store.posizione = 6;navPosition()" class="button c-pointer prevent-select"><b>get in touch</b></a>
+        </div>
+      </nav>
     </div>
     <section class="jumbo w-100">
       <jumboTron/>
@@ -168,14 +168,20 @@
       color: white;
       text-decoration: none;
       font-size: 1.1rem;
-      text-shadow: 1px solid black;
       text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
-
+      &:hover:not(.button) {
+        color: $grey;
+        text-shadow: -1px 0 rgb(0, 0, 0), 0 1px black, 1px 0 black, 0 -1px black;
+      }
     }
+
     i {
       color: white;
       text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
-
+      &:hover {
+        color: $grey;
+        text-shadow: -1px 0 rgb(0, 0, 0), 0 1px black, 1px 0 black, 0 -1px black;
+      }
     }
 
   }

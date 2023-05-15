@@ -4,6 +4,9 @@
 .button {
     background-color: $skyButton;
     padding: 12.5px 25px;
+    &:hover {
+        background-color: $blue;
+    }
 }
 
 .button,
@@ -14,6 +17,10 @@
 .reverseButton {
     border: 2px solid $skyButton;
     padding: 10.5px 23px;
+    &:hover {
+       outline: 6px solid $skyButton;
+       outline-offset: -6px;
+    }
 }
 
 .c-pointer {
