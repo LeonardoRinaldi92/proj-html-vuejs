@@ -125,9 +125,9 @@ export default {
         height: 5px;
         background-color: $sky;
         position: absolute;
-        top: 51%;
+        top: 52%;
         left: 0;
-        right: 85%;
+        right: 84%;
     }
     .box80 {
         background-color: $verdino;
@@ -153,9 +153,10 @@ export default {
         .col-2 {
             p {
                 color: black;
-                font-size: 1.8rem;
+                font-size: 2rem;
                 letter-spacing: 1px;
                 margin-top: 20px;
+
             }
             span {
                 color:$grey;

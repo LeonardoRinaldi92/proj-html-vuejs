@@ -92,7 +92,32 @@
           }else if (store.posizione == 0){
             document.getElementById('navbarra').style.top = "80px"
           }
-        }
+        },
+
+        addCardNumber(){
+            if(store.posizioneCard < 4){
+              console.log('vado')
+              store.posizioneCard ++
+              if (store.posizioneCard == 1) {
+                    document.getElementById('laneGreen').style.right = "66%" 
+                  } else if (store.posizioneCard == 2) {
+                    document.getElementById('laneGreen').style.right = "50%" 
+                  } else if (store.posizioneCard == 3) {
+                    document.getElementById('laneGreen').style.right = "33%" 
+                  } else {
+                    document.getElementById('laneGreen').style.right = "0"
+                  }
+              } else {
+
+                this.bloccaTutto()
+              }
+            },
+          automaticCard(){
+            setInterval(this.addCardNumber, 1000);
+          },
+          bloccaTutto(){
+            clearInterval(this.automaticCard)
+          }
       },
     }
 
@@ -114,7 +139,7 @@
             <a href="/" class="c-pointer prevent-select"><b>Home</b></a>
             <a href="#about" @click="store.posizione = 1;navPosition()" class=" c-pointer prevent-select"><b>about</b></a>
             <a href="#mainService"  @click="store.posizione = 2;navPosition()" class=" c-pointer prevent-select"><b>services</b></a>
-            <a href="#procedure"  @click="store.posizione = 3;navPosition()" class=" c-pointer prevent-select"><b>process</b></a>
+            <a href="#procedure"  @click="store.posizione = 3;navPosition();automaticCard()" class=" c-pointer prevent-select"><b>process</b></a>
             <a href="#testimonials"  @click="store.posizione = 5;navPosition()" class=" c-pointer prevent-select"><b>testimonials</b></a>
             <i class="fa-solid fa-user  c-pointer"></i>
             <a href="#getinTouch" @click="store.posizione = 6;navPosition()" class="button c-pointer prevent-select"><b>get in touch</b></a>

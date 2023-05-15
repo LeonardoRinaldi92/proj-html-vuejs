@@ -26,9 +26,9 @@
             </div>
             <div class="row justify-content-between p-5 my-5">
                 <div class="col-3 text-center">
-                    <span>
+                    <span class="counter" data-count="128">
                         <b>
-                            128
+                            0
                         </b>
                     </span>
                     <p class="my-3">
@@ -38,9 +38,9 @@
                     </p>
                 </div>
                 <div class="col-3 text-center">
-                    <span>
+                    <span class="counter" data-count="230">
                         <b>
-                            230
+                            0
                         </b>
                     </span>
                     <p class="my-3">
@@ -50,9 +50,9 @@
                     </p>
                 </div>
                 <div class="col-3 text-center">
-                    <span>
+                    <span class="counter" data-count="517">
                         <b>
-                            517
+                           0
                         </b>
                     </span>
                     <p class="my-3">
@@ -62,9 +62,9 @@
                     </p>
                 </div>
                 <div class="col-3 text-center">
-                    <span>
+                    <span class="counter" data-count="94">
                         <b>
-                            94
+                            0
                         </b>
                     </span>
                     <p class="my-3">
