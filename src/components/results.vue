@@ -1,6 +1,16 @@
 <script>
+    import { store } from '../store';
+    import Vue3autocounter from 'vue3-autocounter'
     export default {
         name: 'results',
+        data() {
+            return {
+                store
+            }
+        },
+        components : {
+            Vue3autocounter,
+        }
     }
 </script>
 
@@ -28,7 +38,8 @@
                 <div class="col-3 text-center">
                     <span>
                         <b>
-                            128
+                            <Vue3autocounter v-if="store.posizione == 4" ref="counter" :startAmount="0" :endAmount="128" :duration="3" prefix="" suffix="" separator="" decimalSeparator="" :decimals="0" :autoinit="true" />
+                            <span v-else>128</span>
                         </b>
                     </span>
                     <p class="my-3">
@@ -40,7 +51,8 @@
                 <div class="col-3 text-center">
                     <span>
                         <b>
-                            230
+                            <Vue3autocounter v-if="store.posizione == 4" ref="counter" :startAmount="0" :endAmount="230" :duration="3" prefix="" suffix="" separator="" decimalSeparator="" :decimals="0" :autoinit="true" />
+                            <span v-else>230</span>
                         </b>
                     </span>
                     <p class="my-3">
@@ -52,7 +64,8 @@
                 <div class="col-3 text-center">
                     <span>
                         <b>
-                            517
+                            <Vue3autocounter v-if="store.posizione == 4" ref="counter" :startAmount="0" :endAmount="517" :duration="3" prefix="" suffix="" separator="" decimalSeparator="" :decimals="0" :autoinit="true" />
+                            <span v-else>517</span>
                         </b>
                     </span>
                     <p class="my-3">
@@ -64,7 +77,8 @@
                 <div class="col-3 text-center">
                     <span>
                         <b>
-                            94
+                            <Vue3autocounter v-if="store.posizione == 4" ref="counter" :startAmount="0" :endAmount="94" :duration="3" prefix="" suffix="" separator="" decimalSeparator="" :decimals="0" :autoinit="true" />
+                            <span v-else>94</span>
                         </b>
                     </span>
                     <p class="my-3">
