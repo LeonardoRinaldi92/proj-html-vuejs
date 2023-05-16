@@ -34,7 +34,9 @@
                         get in touch
                     </a>
                     <span class="reverseButton c-pointer prevent-select">
-                        read more
+                        <a href="#mainService" @click="store.posizione = 2;$emit('cambioposizione')">
+                            read more
+                        </a>
                     </span>
                 </div>
             </div>

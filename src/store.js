@@ -39,7 +39,24 @@ export const store = reactive (
                 type: 'Dry Cargo',
                 desc: "We work whit the most types of dry cargo, from valuable cargo to the most dangerous requing care."
 
-            }
+            },
+            {
+                icon: 'fa-solid fa-truck-ramp-box',
+                type: 'Technolgy',
+                desc: "We are continually focused on developing technology solution adapted to our client's needed."
+            },
+            {
+                icon: 'fa-solid fa-temperature-low',
+                type: 'Reefer Cargo',
+                desc: "Regular and frequent monitoring from the loaded container to final destination"
+
+            },
+            {
+                icon: 'fa-solid fa-boxes-stacked',
+                type: 'Dry Cargo',
+                desc: "We work whit the most types of dry cargo, from valuable cargo to the most dangerous requing care."
+
+            },
         ],
         reviews: [
             {

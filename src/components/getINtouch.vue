@@ -1,10 +1,15 @@
 <script>
+    import logoMini from './logoMini.vue'
     export default {
         name : 'getINtouch',
         data(){
             return {
                 seeMap : false
             }
+        },
+        components: {
+            logoMini,
+
         },
         methods : {
             mostraMapppa() {
@@ -75,9 +80,7 @@
                 </div>
                 <div class="col-4 ">
                     <span class="prevent-select" >
-                        <b>
-                            Example Inc.
-                        </b>
+                        <logoMini/>
                     </span>
                     <p v-if="!this.seeMap" class="prevent-select" >
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.

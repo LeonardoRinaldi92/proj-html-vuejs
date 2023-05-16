@@ -4,10 +4,22 @@ export default {
     name: 'mainService',
     data() {
         return {
-            store
+            store,
+            numero : 3,
         }
     },
     methods: {
+        elementOnScreen(n) {
+            return store.services.slice(0, n)
+        },
+        cambiaNumero () {
+            if (this.numero == 3) {
+                this.numero = 6
+
+            } else {
+                this.numero = 3
+            }
+        }
     }
 }
 </script>
@@ -19,7 +31,7 @@ export default {
                     road transport
                 </b>
             </span>
-            <div class="BigTitle my-3 prevent-select">
+            <div v-if="this.numero == 3" class="BigTitle my-3 prevent-select">
                 <span style="color: white;" class="me-2">
                     <b>
                         Main
@@ -31,8 +43,8 @@ export default {
                     </b>
                 </span>
             </div>
-            <div class="row">
-                <div class="col-9">
+            <div class="row justify-content-end">
+                <div v-if="this.numero == 3" class="col-9">
                     <p class="prevent-select">
                         <b>
                             Whit all of this expertise and capability come an unrivalled commitment serive. We woll work to undestand your needs in order to develop a productive, long-term partnership.
@@ -40,14 +52,15 @@ export default {
                     </p>
                 </div>
                 <div class="col-3 d-flex justify-content-end">
-                    <span class="reverseButton c-pointer prevent-select">
-                        see all
+                    <span class="reverseButton c-pointer prevent-select" @click="cambiaNumero">
+                        <span v-if="this.numero == 3">see all</span>
+                        <span v-else>see less</span>
                     </span>
                 </div>
             </div>
-            <div class="d-flex my-5">
-                <div v-for="(element, index) in store.services" :key="index" 
-                class="col-4 p-5 schedina rounded-3">
+            <div class="row my-5 justify-content-between">
+                <div v-for="(element, index) in elementOnScreen(this.numero)" :key="index" 
+                class="col4 schedina rounded-3 mt-3 p-5">
                     <div class="row justify-content-between ">
                         <div class="round-icon col-6 ms-2">
                             <i :class="element.icon"></i>
@@ -74,6 +87,10 @@ export default {
 
 <style lang="scss" scoped>
         @import "../style/partials/_variables";
+
+        .box95 {
+            padding: 100px;
+        }
     section {
         background-color: $nero;
         p {
@@ -86,13 +103,18 @@ export default {
             align-self: self-end;
         }
 
+        
+        .col4 {
+                width: calc(100% / 3 - 8px)!important;
+            }
+
         .schedina {
             background-color: $nonNero;
             min-height: 300px;
 
-            &:nth-child(even) {
-                margin: 0px 20px;
-            }
+            // &:nth-child(even) {
+            //     margin: 0px 20px;
+            // }
 
             .col-6 {
                 font-size: 1.5rem;
