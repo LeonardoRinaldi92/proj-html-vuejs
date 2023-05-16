@@ -1,11 +1,26 @@
 <script>
     export default {
         name : 'getINtouch',
+        data(){
+            return {
+                seeMap : false
+            }
+        },
+        methods : {
+            mostraMapppa() {
+                if (!this.seeMap) {
+                    this.seeMap = true
+                } else {
+                    this.seeMap = false
+                }
+
+            }
+        }
     }
 </script>
 
 <template>
-    <div class="box95" id="getinTouch">
+    <div class="box95 position-relative" id="getinTouch">
         <div class="m-auto" style="width: 70%;">
             <div class="row" style="padding-right: 50px;">
                 <div class="col-8">
@@ -59,50 +74,58 @@
                     </div>
                 </div>
                 <div class="col-4 ">
-                    <span class="prevent-select">
+                    <span class="prevent-select" >
                         <b>
                             Example Inc.
                         </b>
                     </span>
-                    <p class="prevent-select">
+                    <p v-if="!this.seeMap" class="prevent-select" >
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </p>
-                    <p class="prevent-select">
+                    <p v-if="!this.seeMap" class="prevent-select" >
                         Ad modi, rem, mollitia molestias laudantium vero ab dolorem iste est iusto.
                     </p>
-                    <div class="d-flex align-items-end c-def">
+                    <div class="d-flex align-items-center c-def mt-5">
                         <div>
                             <i class="fa-solid fa-phone round-icon"></i>
                         </div>
-                        <div class="ms-3">
-                            <p>
+                        <div>
+                            <p class="c-pointer p-0 m-0 ms-3">
                                 +1 (305) 1234-5678
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex align-items-end mt-2">
+                    <div v-if="!this.seeMap" class="d-flex align-items-center mt-4">
                         <div>
-                            <i class="fa-solid fa-envelope round-icon"></i>
+                            <a href="mailto:hello@example.com?subject = ContactUs = Message" style="text-decoration: none;">
+                                <i class="fa-solid fa-envelope round-icon"></i>
+                            </a>
                         </div>
                         <div class="ms-3">
-                            <p>
-                                hello@emaple.com
+                            <p class=" p-0 m-0 ms-1">
+                                <a href="mailto:hello@example.com?subject = ContactUs = Message">hello@example.com</a> 
                             </p>
                         </div>
                     </div>
-                    <div class="d-flex align-items-end mt-2">
+                    <div class="d-flex align-items-center mt-4">
                         <div>
                             <i class="fa-solid fa-location-dot round-icon"></i>
                         </div>
                         <div class="ms-3">
-                            <p>
+                            <p class=" p-0 m-0 ms-2">
                                 Main Avenue, 987
                             </p>
                         </div>
                     </div>
-                    <button class="reverseButton prevent-select">
+                    <button v-if="!this.seeMap" class="reverseButton prevent-select" @click="mostraMapppa()">
                         view map
                     </button>
+                    <button v-else class="reverseButton prevent-select" @click="mostraMapppa()">
+                        hide map
+                    </button>
+                    <div v-if="this.seeMap" id="maps" class="mt-4">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387154.2363648882!2d-74.62154388427736!3d40.70387114129757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1662815997%3A0x77d029be67cfa72c!2sNexGen%20Networks%20Corporation!5e0!3m2!1sit!2sit!4v1684217134723!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </div>   
@@ -196,10 +219,13 @@
         span {
             font-size: 2rem;
         }
-        p {
+        
+        p{
             font-size: 1.3rem;
             margin-top: 30px;
             color: $grey;
+            display: inline-block;
+  
         }
         .round-icon {
                 font-size: 1.4rem;
@@ -218,8 +244,14 @@
                 font-size: 1.5rem;
                 color: $blue;
                 line-height: 2rem;
+                a
+                {
+                    text-decoration: none;
+                    color: $blue;
+                }
             }
         }
     }
+
 
 </style>

@@ -157,7 +157,7 @@
     <getINtouch/>
   </main>
   <footer @wheel.prevent="letSGo">
-    <footerComp/>
+    <footerComp @cambioposizione2="navPosition()" />
     <div class="bottomFooter prevent-select">
       <div  class="m-auto d-flex justify-content-between align-items-center" style="width: 60%;">
         <span>

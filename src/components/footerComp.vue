@@ -1,7 +1,14 @@
 <script>
     import logoMini from './logoMini.vue';
+    import { store } from '../store';
     export default {
         name: 'footerComp',
+        data() {
+            return {
+                store
+            }
+
+        },
         components : {
             logoMini,
 
@@ -39,7 +46,9 @@
                         </span>
                     </p>
                     <span class="reverseButton prevent-select c-pointer">
-                        GET IN TOUCH
+                        <a href="#getinTouch"  @click="store.posizione = 6;$emit('cambioposizione2')">
+                            GET IN TOUCH
+                        </a>
                     </span>
                 </div>
                 <div class="col-9 d-flex prevent-select">
@@ -116,7 +125,13 @@
             .reverseButton {
                 margin-top: 30px;
                 display: inline-block;
-                color: white;
+
+
+                a {
+                    text-decoration: none;
+                    color: white;
+
+                }
             }
         }
         .schedina {
